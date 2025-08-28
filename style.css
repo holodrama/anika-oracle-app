@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    background: #0e0e0e;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.hidden { display: none; }
+button {
+    padding: 0.5rem 1rem;
+    background: #444;
+    border: none;
+    color: white;
+    margin-top: 1rem;
+}
+textarea, input[type="email"] {
+    width: 100%;
+    margin-top: 1rem;
+}
+.door-img {
+    width: 300px;
+    height: auto;
+    margin: 1rem 0;
+}

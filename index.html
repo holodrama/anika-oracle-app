@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anika Oracle App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="door-screen">
+        <h1 class="title">Enter the Oracle Room</h1>
+        <img src="wooden_doors.jpg" alt="Mystical Wooden Doors" class="door-img"/>
+        <button id="enter-btn">Touch the Doors</button>
+    </div>
+
+    <div id="oracle-room" class="hidden">
+        <form id="oracle-form">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="disclosure">
+                <input type="checkbox" id="disclosure" required />
+                I have read and agree to the <a href="disclosure.txt" target="_blank">disclosure</a>.
+            </label>
+
+            <textarea id="question" placeholder="Write your question or hold it in your mind..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="options">
+            <button onclick="generateMessage()">Generate Oracle Message</button>
+            <button onclick="insertMessage()">Insert Oracle Message</button>
+            <button onclick="speakMessage()">Speak Oracle Message</button>
+        </div>
+
+        <div id="result" class="hidden"></div>
+    </div>
+</body>
+</html>
